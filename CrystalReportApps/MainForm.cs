@@ -44,7 +44,7 @@ namespace CrystalReportApps
             da.Fill(ds);
             sqlConnection.Close();
 
-            CrystalReport1 crystalReport = new CrystalReport1();
+            CrystalReport2 crystalReport = new CrystalReport2();
             crystalReport.Database.Tables["BankCredit"].SetDataSource(ds.Tables[0]);
             crystalReport.Database.Tables["BankDebit"].SetDataSource(ds.Tables[1]);
             crystalReport.Database.Tables["ClientPaidAmount"].SetDataSource(ds.Tables[2]);
