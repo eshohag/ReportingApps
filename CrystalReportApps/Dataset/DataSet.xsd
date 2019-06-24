@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbGTSInventoryTurjoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbGTSInventoryTurjoConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CrystalReportApps.Properties.Settings.GlobalReference.Default.dbGTSInventoryTurjoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BankCredit" msprop:Generator_TableClassName="BankCreditDataTable" msprop:Generator_TableVarName="tableBankCredit" msprop:Generator_TablePropName="BankCredit" msprop:Generator_RowDeletingName="BankCreditRowDeleting" msprop:Generator_RowChangingName="BankCreditRowChanging" msprop:Generator_RowEvHandlerName="BankCreditRowChangeEventHandler" msprop:Generator_RowDeletedName="BankCreditRowDeleted" msprop:Generator_UserTableName="BankCredit" msprop:Generator_RowChangedName="BankCreditRowChanged" msprop:Generator_RowEvArgName="BankCreditRowChangeEvent" msprop:Generator_RowClassName="BankCreditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BankName" msprop:Generator_ColumnVarNameInTable="columnBankName" msprop:Generator_ColumnPropNameInRow="BankName" msprop:Generator_ColumnPropNameInTable="BankNameColumn" msprop:Generator_UserColumnName="BankName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreditBalance" msprop:Generator_ColumnVarNameInTable="columnCreditBalance" msprop:Generator_ColumnPropNameInRow="CreditBalance" msprop:Generator_ColumnPropNameInTable="CreditBalanceColumn" msprop:Generator_UserColumnName="CreditBalance" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BankDebit" msprop:Generator_TableClassName="BankDebitDataTable" msprop:Generator_TableVarName="tableBankDebit" msprop:Generator_TablePropName="BankDebit" msprop:Generator_RowDeletingName="BankDebitRowDeleting" msprop:Generator_RowChangingName="BankDebitRowChanging" msprop:Generator_RowEvHandlerName="BankDebitRowChangeEventHandler" msprop:Generator_RowDeletedName="BankDebitRowDeleted" msprop:Generator_UserTableName="BankDebit" msprop:Generator_RowChangedName="BankDebitRowChanged" msprop:Generator_RowEvArgName="BankDebitRowChangeEvent" msprop:Generator_RowClassName="BankDebitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BankName" msprop:Generator_ColumnVarNameInTable="columnBankName" msprop:Generator_ColumnPropNameInRow="BankName" msprop:Generator_ColumnPropNameInTable="BankNameColumn" msprop:Generator_UserColumnName="BankName" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DebitBalance" msprop:Generator_ColumnVarNameInTable="columnDebitBalance" msprop:Generator_ColumnPropNameInRow="DebitBalance" msprop:Generator_ColumnPropNameInTable="DebitBalanceColumn" msprop:Generator_UserColumnName="DebitBalance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ClientPaidAmount" msprop:Generator_TableClassName="ClientPaidAmountDataTable" msprop:Generator_TableVarName="tableClientPaidAmount" msprop:Generator_TablePropName="ClientPaidAmount" msprop:Generator_RowDeletingName="ClientPaidAmountRowDeleting" msprop:Generator_RowChangingName="ClientPaidAmountRowChanging" msprop:Generator_RowEvHandlerName="ClientPaidAmountRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientPaidAmountRowDeleted" msprop:Generator_UserTableName="ClientPaidAmount" msprop:Generator_RowChangedName="ClientPaidAmountRowChanged" msprop:Generator_RowEvArgName="ClientPaidAmountRowChangeEvent" msprop:Generator_RowClassName="ClientPaidAmountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="PaidAmount" msprop:Generator_ColumnVarNameInTable="columnPaidAmount" msprop:Generator_ColumnPropNameInRow="PaidAmount" msprop:Generator_ColumnPropNameInTable="PaidAmountColumn" msprop:Generator_UserColumnName="PaidAmount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ClientReceivableAmount" msprop:Generator_TableClassName="ClientReceivableAmountDataTable" msprop:Generator_TableVarName="tableClientReceivableAmount" msprop:Generator_TablePropName="ClientReceivableAmount" msprop:Generator_RowDeletingName="ClientReceivableAmountRowDeleting" msprop:Generator_RowChangingName="ClientReceivableAmountRowChanging" msprop:Generator_RowEvHandlerName="ClientReceivableAmountRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientReceivableAmountRowDeleted" msprop:Generator_UserTableName="ClientReceivableAmount" msprop:Generator_RowChangedName="ClientReceivableAmountRowChanged" msprop:Generator_RowEvArgName="ClientReceivableAmountRowChangeEvent" msprop:Generator_RowClassName="ClientReceivableAmountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivableAmount" msprop:Generator_ColumnVarNameInTable="columnReceivableAmount" msprop:Generator_ColumnPropNameInRow="ReceivableAmount" msprop:Generator_ColumnPropNameInTable="ReceivableAmountColumn" msprop:Generator_UserColumnName="ReceivableAmount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
