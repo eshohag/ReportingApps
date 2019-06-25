@@ -54,12 +54,8 @@ namespace CrystalReportApps
             crystalReport.Database.Tables["BalanceSheet"].SetDataSource(ds.Tables[4]);
             crystalReport.Database.Tables["Summary"].SetDataSource(ds.Tables[5]);
 
-
-
-
             this.crystalReportViewer1.ReportSource = crystalReport;
             this.crystalReportViewer1.RefreshReport();
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -72,10 +68,6 @@ namespace CrystalReportApps
                 arrayList.Add(accounts);
                 arrayList.Add(banks);
                 crystalReportViewer1.ReportSource = arrayList;
-
-                //ReportDocument aReportDocument = new ReportDocument();
-                //aReportDocument.Load("~/Reports/CrystalReport1.rpt");
-                //aReportDocument.SetDataSource(arrayList);
             }
         }
     }
