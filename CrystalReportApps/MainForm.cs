@@ -57,18 +57,5 @@ namespace CrystalReportApps
             this.crystalReportViewer1.ReportSource = crystalReport;
             this.crystalReportViewer1.RefreshReport();
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            using (ApplicationDbContext db = new ApplicationDbContext())
-            {
-                var accounts = db.dbAccountInfoes.ToList();
-                var banks = db.dbBankinfoes.ToList();
-                ArrayList arrayList = new ArrayList();
-                arrayList.Add(accounts);
-                arrayList.Add(banks);
-                crystalReportViewer1.ReportSource = arrayList;
-            }
-        }
     }
 }
